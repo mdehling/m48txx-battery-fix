@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name m48txx-battery-fix)(type KiCad)(uri ${KIPRJMOD}/m48txx-battery-fix.pretty)(options "")(descr ""))
+)
