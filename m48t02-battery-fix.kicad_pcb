@@ -12,8 +12,8 @@
   (page A4)
   (title_block
     (title "M48T02 Battery Fix")
-    (date 2021-03-09)
-    (rev v01)
+    (date 2021-04-23)
+    (rev v02)
     (company "Malte Dehling")
   )
 
@@ -164,7 +164,7 @@
     (fp_text reference BT1 (at -11.938 4.572 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CR2016 (at 0 6.096 90) (layer F.Fab)
+    (fp_text value CR2016 (at 0 -6.096 270 unlocked) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 7.366 8.89) (end 5.08 8.89) (layer F.SilkS) (width 0.12))
@@ -250,7 +250,7 @@
     )
   )
 
-  (module Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm (layer F.Cu) (tedit 5A0FD1B2) (tstamp 6047E92B)
+  (module Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm (layer F.Cu) (tedit 5A0FD1B2) (tstamp 608318B3)
     (at 157.099 79.502 270)
     (descr "SMD Crystal FC-135 https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135R_en.pdf")
     (tags "SMD SMT Crystal")
@@ -300,10 +300,10 @@
   (gr_text + (at 155.956 107.188) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text M48T02 (at 148.209 79.248 270) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
+  (gr_text M48T02 (at 147.701 76.2 -90) (layer F.SilkS) (tstamp 60831A53)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
-  (gr_poly (pts (xy 147.32 79.502) (xy 146.05 78.74) (xy 147.32 77.978)) (layer F.SilkS) (width 0.1))
+  (gr_poly (pts (xy 146.812 78.486) (xy 145.542 77.724) (xy 146.812 76.962)) (layer F.SilkS) (width 0.1))
 
   (segment (start 153.67 107.188) (end 153.67 105.664) (width 0.5) (layer F.Cu) (net 1))
   (segment (start 151.13 107.188) (end 149.86 107.188) (width 0.5) (layer F.Cu) (net 2))
