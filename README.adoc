@@ -24,9 +24,10 @@ the chip is a little wider than before.  Make sure this is not a problem in
 your system!
 
 
-Parts
------
-These are the parts I use:
+Parts & Assembly
+----------------
+Besides the battery, the upper half of the M48TXX also contains a 32.768kHz
+Crystal.  These are the replacement parts I use:
 
 [%autowidth]
 |===
@@ -36,12 +37,24 @@ These are the parts I use:
 | BT1        | 1        | Linx BAT-HLD-002-SMT
 |===
 
+The battery holder is a CR2016 coin cell holder, so obviously you will also
+need a CR2016 coin cell to install in it.
 
-Assembly
---------
+Once you assemble the board, it should look something like this:
+
+link:{imagesdir}modules.jpg[image:modules.jpg["Modules",width=32%]]
+
+
+Rebuilding the Chip
+-------------------
 Read link:{url-gw-48t02}[GlitchWorks' post on the M48T02].  Make sure to
 correctly align pin 1, both when rebuilding the NVRAM and when installing it,
 or you *will* kill your NVRAM.
+
+Here are some photos of the rebuilt module installed in a SPARCstation IPC:
+
+link:{imagesdir}in-ss-ipc_1.jpg[image:in-ss-ipc_1.jpg["In a SPARCstation IPC 1",width=32%]]
+link:{imagesdir}in-ss-ipc_2.jpg[image:in-ss-ipc_2.jpg["In a SPARCstation IPC 2",width=32%]]
 
 
 Reprogramming the NVRAM
