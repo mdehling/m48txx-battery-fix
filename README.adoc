@@ -1,0 +1,51 @@
+= M48TXX Battery Fix
+Malte Dehling
+
+:imagesdir: https://raw.githubusercontent.com/1k5/m48txx-battery-fix/main/img/
+
+:url-gw-48t02: http://www.glitchwrks.com/2017/08/01/gw-48t02-1
+:url-tindie-gw48t02: https://www.tindie.com/products/glitchwrks/gw-48t02-1-repair-board-diy-48t02-repair-module/
+:url-tindie-gw48t08: https://www.tindie.com/products/glitchwrks/gw-48t08-1-repair-board-module/
+:url-nvram-faq: http://www.obsolyte.com/sunFAQ/faq_nvram.html
+
+
+The M48T02/M48T08 NVRAM chips have builtin batteries and these batteries die
+after a couple of years, resulting in the loss of the NVRAM contents.  As a
+result, depending on the system in question, the NVRAM may need to be
+reprogrammed on every boot.  This module is designed to replace the top half
+of the NVRAM chip containing the battery to make it easily replaceable.  The
+project is a shameless ripoff of GlitchWorks'.  You can buy their version for
+the {url-tindie-gw48t02}[M48T02] and {url-tindie-gw48t08}[M48T08] on Tindie,
+and they have more.
+
+By using SMT components, an M48TXX rebuilt with this module is, in fact,
+flatter than the original.  Do note, however, that, with a CR2016 installed
+the chip is a little wider than before.  Make sure this is not a problem in
+your system!
+
+
+Parts
+-----
+These are the parts I use:
+
+[%autowidth]
+|===
+| Designator | Quantity | Description
+
+| Y1         | 1        | ECS-.327-12.5-34QCN-TR
+| BT1        | 1        | Linx BAT-HLD-002-SMT
+|===
+
+
+Assembly
+--------
+Read link:{url-gw-48t02}[GlitchWorks' post on the M48T02].  Make sure to
+correctly align pin 1, both when rebuilding the NVRAM and when installing it,
+or you *will* kill your NVRAM.
+
+
+Reprogramming the NVRAM
+-----------------------
+How to do this depends on the machine the chip is used in.  For SUN's
+SPARCstations see the {url-nvram-faq}[NVRAM FAQ].
+
