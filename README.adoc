@@ -1,7 +1,7 @@
 = M48TXX Battery Fix
 Malte Dehling
 
-:imagesdir: https://raw.githubusercontent.com/1k5/m48txx-battery-fix/main/img/
+:imagesdir: https://raw.githubusercontent.com/mdehling/m48txx-battery-fix/main/img/
 
 :url-gw-48t02: http://www.glitchwrks.com/2017/08/01/gw-48t02-1
 :url-tindie-gw48t02: https://www.tindie.com/products/glitchwrks/gw-48t02-1-repair-board-diy-48t02-repair-module/
